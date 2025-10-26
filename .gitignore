@@ -1,2 +1,6 @@
 /venv
 .env
+/prisma
+
+/__pycache__
+*.py[cod]
