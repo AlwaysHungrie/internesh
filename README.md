@@ -27,3 +27,10 @@ Using a combination of structured, unstructured and fuzzy matching, Internesh ca
 1. Develop a structured schema based on the problem space (for example, a restaurant mananger role will require it to store menu items, orders, staff profiles etc.)
 2. Learn and develop workflows i.e. actions it can perform along with instructions, business logic (eg. taking orders - only if item is available, processing salaries - only if attendance is confirmed etc.)
 3. Process incoming requests by identifying workflow and using elastic search to identify relevant changes that need to be made in the structured database (eg. taking customer orders from messages like "Spicy burgers", "best vegetarian pizza options" etc.)
+
+# Usage and Demo
+
+The demo below shows how to use Internesh to manage a restaurant.
+
+
+"You are supposed to manage my restaurant. These are the tasks you are responsible for: updating and maintaining items in the menu, taking orders from customers, tracking staff attendance and salaries"

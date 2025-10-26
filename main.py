@@ -5,7 +5,7 @@ import logging
 import sys
 from typing import Optional
 
-from src.agents.basic_agent import BasicAgent
+from src.agents.unconfigured_agent import UnconfiguredAgent
 from src.llm.client import LLMClient
 from src.database.connection import db_client
 from src.config import settings
@@ -23,7 +23,7 @@ class InterNeshApp:
     
     def __init__(self):
         """Initialize the application."""
-        self.agent: Optional[BasicAgent] = None
+        self.agent: Optional[UnconfiguredAgent] = None
         self.llm_client: Optional[LLMClient] = None
         
     def initialize(self):
@@ -42,7 +42,7 @@ class InterNeshApp:
             logger.info("LLM client initialized successfully")
             
             # Initialize agent
-            self.agent = BasicAgent(llm_client=self.llm_client)
+            self.agent = UnconfiguredAgent(llm_client=self.llm_client)
             logger.info("Agent initialized successfully")
             
             logger.info("Application initialization completed")
